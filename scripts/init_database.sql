@@ -16,3 +16,35 @@
 
 
 */
+
+USE master;
+GO
+
+
+--Create the database 'DataWarehouse'. (Drop if already exists and recreate)
+
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name == 'DataWarehouse')
+BEGIN
+    --Disconnect all other users except the main user and immediately rollback uncommited changes, open transactions and Active Queries
+    ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE; 
+    --Drop database after rollback
+    DROP DATABASE DataWarehouse;
+END;
+
+
+--Create new database
+CREATE DATABASE DataWarehouse;
+GO
+
+USE DataWarehouse;
+GO;
+
+--Create Schemas
+CREATE SCHEMA Bronze;
+GO;
+
+CREATE SCHEMA Silver;
+GO;
+
+CREATE SCHEMA Gold;
+GO;

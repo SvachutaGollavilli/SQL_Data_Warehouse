@@ -1,6 +1,8 @@
 # SQL_Data_Warehouse
 Building a model Data Warehouse using SQL Server, including ETL process, data modeling and analytics.
 
+The objective is to demonstrate a comprehensive data warehousing and analytics solution from building a datawarehouse to actionable insights. It is built to highlight industry best practices in data engineering and analytics.
+
 ## Building the Data Warehouse
 
 ### Objective

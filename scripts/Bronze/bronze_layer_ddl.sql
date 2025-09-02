@@ -2,7 +2,7 @@
 
 ============================================================================
 
-Create DDL script for the Bronze layer of the DataWarehouse
+DDL script to create table schema in the Bronze layer of the DataWarehouse
 
 ============================================================================
 

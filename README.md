@@ -32,6 +32,8 @@ The architecture implemented to build the datawarehouse is the **Medallion** arc
 | Data Transformation | None(Raw Data Integration from different sources)   | - Cleaning -Standardisation -Normalisation -Derived Columns -Enrichment     | -Integration -Aggregation -Business Logic and Rules |
 | Target Audience | Data Engineers  | Data Engineers and Analysts     | Business Users, Data Scientists, ML Models, Analysts|
 
+The Data Modeling is implemented in the final Gold Layer of the architecture with **Star Schema**, **Aggregated Object**, and **Flat Tables**.
+
 ### Naming Conventions
 
 We are using the snake case {all lowercase charecters seperated by '_' (for better readability)} to name the tables in 

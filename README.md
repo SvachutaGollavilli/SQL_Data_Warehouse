@@ -36,5 +36,5 @@ The Data Modeling is implemented in the final Gold Layer of the architecture wit
 
 ### Naming Conventions
 
-We are using the snake case {all lowercase charecters seperated by '_' (for better readability)} to name the tables in 
-the Bronze, Silver and Gold layers
+We are using the snake case (all lowercase charecters seperated by '_' for better readability) to name the tables in 
+the Bronze, Silver and Gold layers. The sql script files for DDL, DML are also named using the same convention. This makes it easier for the user to understand.
